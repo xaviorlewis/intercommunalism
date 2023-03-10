@@ -277,11 +277,8 @@ timeline.to(".wrapper", { opacity: 0})
             .to(tito, { opacity: 1, duration: 2})
             .to(tito, { x: "45%", scale: .75 , duration: 2, delay: 1})
             .call(() => { document.querySelector(".begin1").innerHTML =
-"Josip Broz Tito was a Yugoslav revolutionary and statesman who led the anti-colonial struggle against foreign powers in the Balkans during the 20th century. He rose to prominence as the leader of the Partisans, a guerrilla group that fought against Axis powers and their collaborators in Yugoslavia during World War II."
-+
-"After the war, Tito became the Prime Minister of Yugoslavia and implemented a socialist system that aimed to create a more equitable society. He also worked to strengthen ties with other non-aligned nations, particularly in Africa and Asia, and became a prominent figure in the global anti-colonial movement."
-+
-"Tito's anti-colonial struggle was driven by a belief in national liberation and self-determination for oppressed peoples. He viewed colonialism as a form of imperialism that sought to exploit and subjugate peoples and nations for the benefit of foreign powers. Tito argued that the only way to combat colonialism was through collective action, solidarity, and resistance."            })
+                "Tito's Yugoslavia was one of the founding members of the Non-Aligned Movement, which aimed to promote independence, sovereignty, and cooperation among developing countries. This was a major example of Tito's commitment to non-alignment and neutrality in the Cold War, and to promoting international solidarity among developing countries."
+            })
             .to(".keywordSpeaker", {opacity:0, x: "100%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-275%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Josip Broz Tito"})
@@ -298,13 +295,8 @@ timeline.to(".wrapper", { opacity: 0})
             .to(nehru, { opacity: 1, duration: 2})
             .to(nehru, { x: "-45%", scale: .75 , duration: 2, delay: 1})
             .call(() => { document.querySelector(".begin1").innerHTML =
-"He was committed to ending British colonial rule in India and worked tirelessly to organize protests, rallies, and strikes."
-+
-"In the 1930s, Nehru became the leader of the Indian National Congress and worked to develop a vision for an independent India. He believed in a socialist, secular, and democratic India that would provide equal opportunities for all citizens."
-+
-"During World War II, Nehru and the Congress launched the Quit India Movement, which demanded that the British leave India immediately. The movement was met with violent repression by the British authorities, but it galvanized the Indian people and led to increased support for the independence movement."
-+
-"After India gained independence in 1947, Nehru became the country's first prime minister. He worked to build a modern, democratic, and secular India that would be a model for other newly independent countries. He also championed non-alignment, which meant that India would remain neutral in the Cold War and pursue its own foreign policy."            })
+                "Nehru was a key figure in the Indian independence movement, which fought against British colonialism in India. His leadership and vision for a free and democratic India was a major example of anti-colonial struggle, and inspired similar movements in other parts of the world."
+            })
             .to(".keywordSpeaker", {opacity:0, x: "-175%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "400%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Jawaharlal Nehru"})
