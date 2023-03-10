@@ -1,5 +1,5 @@
 # intercommunalism
-an online installation discussing the importance of Huey P. Newton's seminal theory.
+**an online installation discussing the importance of Huey P. Newton's seminal theory.**
 
 The theory of Revolutionary Intercommunalism, as posited by Huey P. Newton, represents a crucial precursor to contemporary movements such as postcolonial globalization, abolitionism, and the development of racial capitalism. This theory can be viewed as an antifragile unifying theory of empire that challenges traditional notions of sovereignty and nation-states.
 
