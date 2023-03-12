@@ -9,8 +9,8 @@ main {
 
 .landing {
   min-height: 100vh;
-  padding: 0rem 5rem;
 }
+
 
 nav {
   display: flex;
@@ -271,20 +271,19 @@ nav {
 .city {
     position: absolute;
     top: 42%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 10rem;
     font-family: "Lobster", cursive;
     color: rgb(225, 0, 0);
-    width: fit-content;
-    height: fit-content;
-    border-radius: 15rem;
-    display: inline-block;
+    width: 45rem;
+    height: 22rem;
+    border-radius: 20rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     text-align: center;
-    width: fit-content;
-    }
+}
 
 
 
@@ -402,24 +401,19 @@ nav {
       animation: blink .6s linear infinite alternate;
 }
 .country {
-    width: 200px;
-    text-align: center;
+  position: relative;
+  width: 290px; /* adjust to desired width */
   border: 1px solid black;
-  padding: 10px;
-  margin: 5px;
-  font-size: 1rem;
+  padding: 4rem;
+  margin: 20px; /* adjust to desired margin */
+  font-size: 3rem;
   opacity: 0;
-    top: 50%;
-    left: 50%;
-  transform: translate(-50%, -50%);
-  border: 2px solid lightskyblue; /* specify border style, width, and color */
-  border-radius: 3px;
-  max-width: 900px;
-  border-width: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   font-family: "Heebo";
   color: rgb(225, 0, 0);
   background: black;
-  padding: 2rem 3rem; /* correct padding values */
 }
 
 
@@ -457,11 +451,15 @@ nav {
 
 .organizing-countries {
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  font-size: 2rem;
+  font-size: 7rem;
   border: 2px solid "#b79d81"; /* specify border style, width, and color */
   border-radius: 3px;
   max-width: 900px;

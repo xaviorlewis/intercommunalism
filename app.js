@@ -96,11 +96,11 @@ timeline.to(".wrapper", { opacity: 0})
         .to(".text", { y: "0%", duration: .2, stagger: .15 })
         .to(".slider", { y: "-100%", duration: .5, delay: 0.5 })
         .to(".intro", { y: "-100%", duration: .1 })
-
+//
         ////////intercommunalism
-        .to(".big-text", { x: "70%", duration: 2.75})
-        .fromTo(".big-text2", { opacity: 0 }, { opacity: 1, duration: 2.7})
-        .to(".big-text2", { x: "-40%", duration: 3.5}, "-1")
+        .to(".big-text", {x: "20%", duration: 2.75})
+        .fromTo(".big-text2", { opacity: 0 }, { marginLeft:"-20%", opacity: 1, duration: 2})
+        .to(".big-text2", { duration: 3.5}, "-1")
         .to(".big-text", { opacity: 0 } )
         .to(".big-text2", { opacity: 0} )
 
@@ -116,33 +116,23 @@ timeline.to(".wrapper", { opacity: 0})
         .to(".bang span", { opacity: 1, stagger: 0.25 , duration: 1.84})
         .to(".bang span", { opacity: 0, stagger: 0.25 })
 
-        //////bandung
-        .fromTo(".city", { opacity: 0, left: "50%"}, { opacity: 1, duration: .4, delay:1.15})
-        .to(".city",  { y: "-300", x: "-630", duration: 1, delay:1.15, scale: .5})
-        .to(".city", { backgroundColor: "lightskyblue", borderRadius: "105%", padding: "-50rem 2rem", width: "fit-content", duration: 1 }, "<")
+        ////bandung
+        .fromTo(".city", { opacity: 0}, { opacity: 1, duration: .4, delay:1.15})
+        .to(".city",  { duration: 1, delay:1.15, scale: .5, top: "10%", left: "12%"})
+        .to(".city", { backgroundColor: "lightskyblue", duration: 1 }, "<")
         .to("body", { backgroundImage: "url('./images/bang1.jpeg')" , delay: 1}, "<")
 
-        //
-        //////bg change
-        //                .to("body", { backgroundImage: 'url(${b1.src})', delay: 1 })
-        //                .to("body", { backgroundImage: 'url(${b2.src})', delay: 1 })
-        //
-        //                .to("body", { backgroundImage: 'url(${b3.src})', delay: 1 })
-        //
-        ////
-
-        //         Animate the organizing countries' boxes
 
         //     .to({}, { duration: 3 })
-        .to(".org-title", {opacity:1, duration:1, y: "-300%" })
-        .to(".organizing-countries", { opacity: 1, duration: 1,  marginTop: "-35%", marginLeft: "30%" })
+        .to(".org-title", {opacity:1, duration:2, y: "-300%" })
+        .to(".organizing-countries", { opacity: 1, duration: 1 })
         .to(".org-title", {opacity:0, duration:1})
         .to(".country", { opacity: 1, duration: 1 })
         .to(".country", {opacity:0, duration: 1, delay:3})
 
         .to(".member-title", {opacity:1, duration:1, y: "-300%"})
         .to(".member-title", {opacity:0, duration:3, delay: 1})
-        .to(".member-countries", { opacity: 1, duration: 1, marginTop: "-30%", marginLeft: "15%" })
+        .to(".member-countries", { opacity: 1, duration: 1, x: "20%"})
         .to(".mcountry", { opacity: 1, duration:1 })
         .to(".mcountry", {y: "-=2500", duration: 10, ease: "Power2.easeOut"})
 
