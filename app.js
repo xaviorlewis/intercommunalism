@@ -141,8 +141,8 @@ timeline.to(".wrapper", { opacity: 0})
         .call(() => {
         document.querySelector(".begin1 p").innerHTML = "President Sukarno of Indonesia proclaimed it 'the first international conference of colored peoples in the history of mankind.'"
         })
-        .to(suk1, {scale: .75, y: "-10%", opacity:1})
-        .to(".begin1", {opacity:1, y: "90%", height: "fit-content"})
+        .to(suk1, {scale: .75, y: "-20%", opacity:1})
+        .to(".begin1", {opacity:1, y: "80%", height: "fit-content"})
 
         .to({}, {delay: 4})
         .to(".begin1", {opacity: 0})
@@ -154,7 +154,7 @@ timeline.to(".wrapper", { opacity: 0})
         "The Bandung Spirit represented a shift in international relations away from the binary Cold War worldview, which divided the world into two opposing camps"
         })
 
-        .to(".begin1", {opacity: 1, y:"-60%"})
+        .to(".begin1", {opacity: 1, y: "-40%"})
         .to({}, { delay: 2 })
 
         .to(soviet, {opacity: 1, x: "-30%"}, ">")
@@ -251,7 +251,7 @@ timeline.to(".wrapper", { opacity: 0})
 
 
         .to("body", { backgroundImage: "none", backgroundColor: "black" })
-
+//
 
 
 //Non-Aligned-Movement
@@ -263,7 +263,7 @@ timeline.to(".wrapper", { opacity: 0})
                   .to({}, { delay: 6 })
 
 //tito
-            .to(".begin1", {opacity:0, duration: 1})
+            .to(".begin1", {opacity:0, duration: 1, x:"-15%"})
             .to(tito, { opacity: 1, duration: 2})
             .to(tito, { x: "45%", scale: .75 , duration: 2, delay: 1})
             .call(() => { document.querySelector(".begin1").innerHTML =
