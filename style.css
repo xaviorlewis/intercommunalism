@@ -178,6 +178,27 @@ nav {
   padding: 2rem 1rem; /* correct padding values */
 }
 
+.begin2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  justify-content: center;
+  word-wrap: break-word;
+  font-size: 2rem;
+  border: 5px solid lightskyblue; /* specify border style, width, and color */
+  border-radius: 10px;
+  border-width: 13px;
+  font-family: "Heebo";
+  color: rgb(225, 0, 0);
+  background: black;
+  padding: 2rem 1rem; /* correct padding values */
+}
+
 .wrapper {
   position: relative;
 }
@@ -262,13 +283,46 @@ nav {
   transition: opacity 0.75s ease-in-out;
 }
 
+.belgrade {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  font-family: "Lobster", cursive;
+  color: rgb(225, 0, 0);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.belgrade span {
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
 .image {
     transform: translate(0px, 900%)
     opacity:0
 }
 
-
-.city {
+.cite{
+position: absolute;
+    top: 42%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-family: "Lobster", cursive;
+    color: rgb(225, 0, 0);
+    border-radius: 2rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.city{
     position: absolute;
     top: 42%;
     left: 50%;
@@ -349,11 +403,49 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.principles {
+    display: flex;
+    opacity: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.principle-item {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    color: rgb(225, 0, 0);
+    background-color: #f4f4f4;
+    opacity: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+    padding: 15px;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .principle-item {
+        flex-basis: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .principle-item {
+        flex-basis: calc(100% - 20px);
+    }
+}
 
 .NameM,
 .NameL,
 .NameH,
-.NameF{
+.NameF,
+.nonA{
     position: absolute;
     top: 42%;
     left: 50%;
@@ -368,6 +460,7 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
+    opacity:0;
     text-align: center;
     width: fit-content;
     }
