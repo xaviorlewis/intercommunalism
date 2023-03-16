@@ -255,9 +255,6 @@ timeline.to(".wrapper", { opacity: 0})
         .to({}, { delay: 6 })
 
         .to(".cite", { opacity: 0 })
-        .call(() => { document.querySelector(".cite").innerHTML =
-"Bhambra, Gurminder K. and Narayan, John (2016) 'Colonial histories and the post-colonial present of European cosmopolitanism'"
-})
 
 
         .call(() => { document.querySelector(".begin1").innerHTML =
@@ -294,11 +291,13 @@ timeline.to(".wrapper", { opacity: 0})
         .to({}, { delay: 14 })
         .to(".begin1", {opacity:0})
 
-        .to(".cite", {opacity:0})
+        .to(".cite", {opacity: 0})
 
 //tito
             .to(".begin1", {top:"50%", left:"50%",  xPercent: -50, yPercent: -20})
             .to(tito, { opacity: 1, duration: 2})
+                    .call(() => { document.querySelector(".cite").innerHTML =
+"Robert Niebuhr, 'Nonalignment as Yugoslavia's Answer to Bloc Politics.'"})
             .to(tito, { x: "45%", scale: .75 , duration: 2, delay: 1})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Tito's Yugoslavia was one of the founding members of the Non-Aligned Movement, which aimed to promote independence, sovereignty, and cooperation among developing countries. This was a major example of Tito's commitment to non-alignment and neutrality in the Cold War, and to promoting international solidarity among developing countries."
@@ -311,6 +310,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(tito, { opacity: 0, duration: 1, delay: 10 })
+            .to(".cite", {opacity: 0})
             .to(".begin1", {opacity:0, duration: 1}, "<")
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
@@ -325,11 +325,13 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:0, x: "400%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Jawaharlal Nehru"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "India"})
+            .to(".cite", {opacity: 1})
             .to(".begin1", {x: "50%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(nehru, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity: 0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -343,11 +345,16 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:0, x: "-300%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Sukarno"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Indonesia"})
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Rodriguez, Besenia (2006) 'Long Live Third World Unity! Long Live Internationalism!'"
+})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
+            .to(".cite", {opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(suk2, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity: 0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 //
@@ -359,22 +366,27 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to(".keywordSpeaker", {opacity:0, x: "-200%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "200%", y: "-350%"})
+            .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Julius Nyerere"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Tanzania"})
             .to(".begin1", {x: "50%", duration: 3, opacity: 1})
+            .to(".cite", {opacity:1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(julius, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
 //castro
             .to(castro, { opacity: 1, duration: 2})
             .to(castro, { x: "45%", scale: .75 , duration: 2, delay: 1})
+            .call(() => { document.querySelector(".cite").innerHTML ="Ted Roberts, ‘Cuba and the Non-Aligned Movement’"})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Castro's leadership of the Cuban Revolution, which overthrew the US-backed Batista regime in 1959, was a major example of anti-colonial struggle and international solidarity. Castro's vision for a socialist Cuba and his commitment to international solidarity with other anti-imperialist movements, particularly in Latin America, was influential in shaping the global political landscape."
             })
+            .to(".cite", {opacity:1})
             .to(".keywordSpeaker", {opacity:0, x: "175%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-630%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Fidel Castro"})
@@ -385,6 +397,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to(castro, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
 //ho chi
@@ -393,6 +406,8 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Ho Chi Minh (Vietnam): Ho Chi Minh's leadership of the Vietnamese independence movement, which fought against French colonialism and later US imperialism, was a major example of anti-colonial struggle and international solidarity. Ho's vision for a united, independent, and socialist Vietnam was influential in shaping the global political landscape."
             })
+            .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
+            .to(".cite", {opacity:1})
             .to(".keywordSpeaker", {opacity:0, x: "-250%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "250%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Ho Chi Minh"})
@@ -402,6 +417,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(hochi, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -411,6 +427,9 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Nkrumah's leadership of the Ghanaian independence movement, which fought against British colonialism in Ghana, was a major example of anti-colonial struggle and international solidarity. Nkrumah's vision for pan-Africanism and his commitment to the economic and political independence of African countries was influential in shaping the global political landscape."
             })
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Rodriguez, Besenia (2006) 'Long Live Third World Unity! Long Live Internationalism!'"
+})
             .to(".keywordSpeaker", {opacity:0, x: "75%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-450%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Kwame Nkrumah"})
@@ -418,6 +437,8 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
+            .to(".cite", {opacity:1})
+
             .to(kwame, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
@@ -429,6 +450,9 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Nasser's leadership of the Egyptian revolution, which overthrew the British-backed monarchy in 1952, was a major example of anti-colonial struggle and international solidarity. Nasser's vision for pan-Arabism and his commitment to the economic and political independence of Arab countries was influential in shaping the global political landscape."
             })
+            .call(() => { document.querySelector(".cite").innerHTML =
+            "Shirley Graham DuBois, 'Gamal Abdel Nasser: Son of the Nile, a Biography'"})
+            .to(".cite", {opacity: 1})
             .to(".keywordSpeaker", {opacity:0, x: "-150%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "450%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Gamal Abdel Nasser"})
@@ -437,6 +461,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(nasser, { opacity: 0, duration: 1, delay: 10})
+            .to(".cite", { opacity: 0 })
             .to(".begin1", {opacity:0, duration: 1}, "<")
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
@@ -447,6 +472,7 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Ben Bella's leadership of the Algerian independence movement, which fought against French colonialism in Algeria, was a major example of anti-colonial struggle and international solidarity. Ben Bella's vision for a united, independent, and socialist Algeria was influential in shaping the global political landscape."
             })
+            .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
             .to(".keywordSpeaker", {opacity:0, x: "90%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-425%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Ahmed Ben Bella"})
@@ -454,8 +480,11 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
+            .to(".cite", {opacity:1})
+
             .to(benbella, { opacity: 0, duration: 1, delay: 2})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -480,10 +509,11 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to({}, { delay: 2 })
 
-            .call(() => { document.querySelector(".begin2").innerHTML =
-"This creates a fundamental antagonism between the interests of the capitalist class and the working class, as the capitalists seek to maximize their profits and the working class seeks to improve their conditions of labor and compensation."
-            })
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Karl Marx, 'Wage labour and capital' "            })
             .to({}, { delay: 2 })
+
+            .to(".cite", {opacity:1})
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Capitalism has an inherent drive to expand and grow, as capitalists seek to increase their profits through the accumulation of capital."
@@ -504,7 +534,7 @@ timeline.to(".wrapper", { opacity: 0})
 "The growth of industrial capitalism in the United States in the late 19th and early 20th centuries led to the exploitation of immigrant labor and the development of new forms of class conflict."
              })
              .to({}, { delay: 2 })
-
+            .to(".cite", {opacity: 0})
             .to(".begin2", {opacity: 0})
 
 
@@ -527,6 +557,13 @@ timeline.to(".wrapper", { opacity: 0})
 "Imperialism is the highest stage of capitalism, in which monopolies and finance capital dominated the global economy and competed for control over resources and markets."
             })
             .to({}, { delay: 2 })
+
+                        .call(() => { document.querySelector(".cite").innerHTML =
+"Vladimir Lenin, 'Imperialism: The Highest Stage of Capitalism'"
+            })
+
+            .to(".cite", { opacity: 1 })
+
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Imperialism intensified class antagonisms and created new forms of oppression, as capitalist powers sought to control resources and labor in the colonies and semi-colonies."
@@ -551,6 +588,7 @@ timeline.to(".wrapper", { opacity: 0})
 "Lenin saw the struggle against imperialism as central to the broader struggle for socialism, as it exposed the inherent contradictions and exploitative nature of capitalism."
             })
             .to({}, { delay: 2 })
+            .to(".cite", { opacity: 0 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Both Marx and Lenin saw history as the result of the dialectical interplay of forces, with conflicts and struggles driving social change."
@@ -587,7 +625,11 @@ timeline.to(".wrapper", { opacity: 0})
 
 "Fanon saw colonialism as a process that destroyed the dynamism of colonized people and established defense mechanisms. The colonized person is made to admit the inferiority of their culture, nation, and even their own biological structure. This instills a powerful form of racism into the thinking of the victims as well as the oppressors. "
             })
+                        .call(() => { document.querySelector(".cite").innerHTML =
+"Frantz Fanon, 'The Wretched of the Earth'"})
+            .to(".cite", {opacity: 1})
             .to({}, { delay: 4 })
+
             .call(() => { document.querySelector(".begin2").innerHTML =
 "This mirrors Lenin's argument that imperialism creates a division between the ruling and colonized classes, creating a culture of racism and prejudice that benefits the ruling class."
             })
@@ -601,10 +643,10 @@ timeline.to(".wrapper", { opacity: 0})
             .to({}, { delay: 4 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
-"Fanon argues that the Third World needs to create a new history of Man, one that is not based on the exploitative and oppressive models of Europe and the United States. This call for a new history echoes Lenin's belief that imperialism is a system that is incompatible with the survival of humanity and that the only way to overcome it is through revolution."
+"Fanon argues that the 'Third World' needs to create a new history of Man, one that is not based on the exploitative and oppressive models of Europe and the United States. This call for a new history echoes Lenin's belief that imperialism is a system that is incompatible with the survival of humanity and that the only way to overcome it is through revolution."
             })
             .to({}, { delay: 4 })
-
+            .to(".cite", {opacity: 0})
             .to(".begin2", { opacity: 0 })
 
 //huey
@@ -623,16 +665,16 @@ timeline.to(".wrapper", { opacity: 0})
 
             .to({}, { delay: 2 })
 
-
-
             .to(huey2, { opacity: 1})
 
             .to({}, { delay: 2 })
             .to(huey2, { opacity: 0})
 
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Excerpt from Huey P. Newton, 'Revolutionary intercommunalism and the right of nations to self-determination'"
+})
 
-
-
+            .to(".cite", {opacity: 1})
             .call(() => { document.querySelector(".begin2").innerHTML =
             "The Black Panther Party has chosen materialist assumptions on which to ground its ideology. This is a purely arbitrary choice. Idealism might be the real happening; we might not be here at all. We don’t really know whether we are in Connecticut or in San Francisco, whether we are dreaming and in a dream state, or whether we are awake and in a dream state. Perhaps we are just somewhere in a void; we simply can’t be sure. "
             })
@@ -667,7 +709,7 @@ timeline.to(".wrapper", { opacity: 0})
                        })
                         .to({}, { delay: 4 })
 
-
+                        .to(".cite", {opacity: 0})
                         .call(() => { document.querySelector(".begin2").innerHTML =
             "According to Newton, dialectical materialism helps to identify how the key center of conflict in any situation may have shifted. The Black Panther Party began as a black nationalist organization that invested their efforts in pursuing a politics concerned with defending and empowering Black people as a distinct community. From the start, they critiqued cultural nationalist approaches, noting both their ineffectiveness for significantly changing the lives of most Black people and their popularity among more educated and affluent African Americans."
                         })
