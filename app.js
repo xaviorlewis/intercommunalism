@@ -725,11 +725,111 @@ timeline.to(".wrapper", { opacity: 0})
             .to(imperialismus, { opacity: 0 })
 
 
-            .call(() => { document.querySelector(".begin2").innerHTML =
-"Newton believed there were two possible outcomes of intercommunalism: 'reactionary intercommunalism' and 'revolutionary intercommunalism.' In reactionary intercommunalism, the forces of imperialism would continue to dominate the world, leading to greater inequality and oppression." })
-            .to({}, { delay: 3 })
+.call(() => { document.querySelector(".begin2").innerHTML =
 
-            .call(() => { document.querySelector(".begin2").innerHTML =
-"Newton's theory of intercommunalism explains the political force of American capitalist empire on the world stage and the decline of nation-states and nationalism. He describes the current phase of capitalism as reactionary intercommunalism where U.S. empire has reduced the world to a collection of communities lacking control over their local conditions of life. The communities can become autonomous 'liberated territories' within the larger empire and can build an interconnected and 'cooperative framework' among themselves in a global dynamic that he calls revolutionary intercommunalism."
+"Marx and Lenin centered their analysis on the economic and class dimensions of imperialism. Marx's concept of the exploitation of labor and the accumulation of capital in the hands of a few, and Lenin's belief in the export of capital as a key driver of imperialism, both highlight the economic aspects of power." })
+
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"Newton's theory of an international bourgeoisie dominating nations worldwide synthesizes these economic ideas by demonstrating how corporate interests drive government policies, furthering imperialist ambitions and eroding nationhood characteristics." })
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"Frantz Fanon's primary focus was on the psychological and cultural impacts of colonialism. He argued that colonialism dehumanizes the colonized and leads to the internalization of the colonizer's values, which perpetuates the oppressive system."  })
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"Newton extends Fanon's ideas by examining the interplay between corporate and government power in shaping global dynamics and foregrounding the importance of cultural determination and the erosion of national sovereignty in the face of imperialism." })
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML ="Fanon was a stalwart advocate that the mastery of a language, even the colonizer’s language is a source of immense power. He argues, that effectively appropriating the colonizer’s language begets a radically subversive textuality of anticolonialism. "})
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+"Frantz Fanon, Wretched of the Earth"})
+    .to(".cite", { opacity: 1 })
+            .to({}, { delay: 4 })
+    .to(".cite", { opacity: 0})
+
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"Newton, this work contends, mastered the language of post-colonialism, and as such developed a materialist theory, an action plan that will build society into one that is 'essentially human'."
+
+})
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+"Newton, Speech at Boston College: November 18, 1970"})
+
+    .to(".cite", { opacity: 1 })
+            .to({}, { delay: 4 })
+    .to(".cite", { opacity: 0})
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"According to Newton, the United States' 'ruling circle,' situated at the intersection of corporate and government power, has acquired unprecedented influence over every nation worldwide. This development has transformed the US economy into a foundation for an international bourgeoisie and Western corporate authority." })
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"Consequently, traditional aspects of nationhood, such as economic independence, cultural determination, political institution control, territorial integrity, and safety, have become obsolete for both the US and other nations." })
+          .to({}, { delay: 4 })
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+"Newton and Lenin, Revolutionary Intercommunalism and the Right to Self-Determination."  })
+
+    .to(".cite", { opacity: 1 })
+            .to({}, { delay: 4 })
+    .to(".cite", { opacity: 0})
+
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"By connecting the global interests of the US empire and its international bourgeoisie to the decline of national sovereignty, Newton offers a comprehensive understanding of imperialism that encompasses the economic, cultural, and political spheres. His theory unifies the ideas of Fanon, Marx, and Lenin by demonstrating how corporate and government power interconnects with and shapes the global political landscape, going beyond the limitations of focusing solely on national liberation struggles. As a result, Huey Newton emerges as a significant figure with a unifying theory of empire that captures the complexities of modern imperialism and its far-reaching consequences." })
+
+            .to({}, { delay: 4 })
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+
+"The intertwining of global interests with those of the US empire and its international bourgeoisie has led to Third World countries and even former European imperial powers conceding to its dominance. This results in these nations sacrificing their theoretical national sovereignty (Newton, 2002). Newton (1972a) anticipated Hardt and Negri's concept of a global aristocracy of empire, stating that the new phase of imperialism is characterized by conflicts among the empire's rulers, rather than between rulers and the people."})
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+"John Narayan, 'Huey P. Newton’s Intercommunalism'"  })
+    .to(".cite", { opacity: 1 })
+            .to({}, { delay: 4 })
+    .to(".cite", { opacity: 0})
+
+.call(() => { document.querySelector(".begin2").innerHTML ="Hardt and Negri's work on the global aristocracy of empire is a more direct extension of Newton's ideas. In their book 'Empire,' they describe a transition from traditional imperialism to a new form of global power structure, where nation-states are no longer the primary actors. This new form of empire resonates with Newton's thoughts on the erosion of national sovereignty and the rise of an international bourgeoisie that transcends national boundaries."})
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+            "Hardt and Negri, 'Empire'"})
+                        .to(".cite", { opacity: 1 })
+
+            .to({}, { delay: 4 })
+                        .to(".cite", { opacity: 0 })
+
+.call(() => { document.querySelector(".begin2").innerHTML ="Immanuel Wallerstein's world-systems theory divides the world into core, semi-peripheral, and peripheral countries that are interconnected through a capitalist world economy. Wallerstein's perspective on the global economic system and the way it maintains a hierarchy of nations also echoes Newton's emphasis on the interconnectedness of the US empire and its international bourgeoisie. According to the world-systems theory, the core countries exploit the peripheral and semi-peripheral nations for resources and cheap labor, perpetuating a cycle of dependency and underdevelopment."})
+
+.call(() => { document.querySelector(".begin2").innerHTML =
+"This hierarchical structure is consistent with Newton's observations on how the US empire and its international bourgeoisie impose their interests on Third World nations and former European imperial powers, leading to the sacrifice of their theoretical national sovereignty."})
+
+    .call(() => {
+            document.querySelector(".cite").innerHTML =
+"Immanuel Wallerstein, 'The Rise and Future Demise of the World-Capitalist System: Concepts for Comparative Analysis'"
             })
-            .to({}, { delay: 3 })
+                        .to(".cite", { opacity: 1 })
+
+            .to({}, { delay: 4 })
+                        .to(".cite", { opacity: 0 })
+
+.call(() => { document.querySelector(".begin2").innerHTML ="Newton's unifying theory of empire can be seen as a precursor to these later theorists, as it synthesizes and expands upon the economic, cultural, and political dimensions of imperialism. By highlighting the nexus of corporate and government power and its consequences for nationhood and sovereignty, Newton provides a comprehensive understanding of the complex dynamics of modern imperialism. His work thus serves as a foundation for further development of the ideas of Fanon, Marx, Lenin, Hardt and Negri, and Wallerstein, offering a nuanced and integrated perspective on the interplay between global power structures and the consequences of imperialism."})
+
+            .to({}, { delay: 4 })
