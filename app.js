@@ -97,7 +97,7 @@ const timeline = gsap.timeline({ defaults: { ease: "power1.out" } });
 timeline.set(".begin0", { opacity: 0 }); // set initial opacity to 0
 timeline.set(".org-title", {opacity:0})
 timeline.set(".member-title", {opacity:0})
-timeline.set(".cite", {opacity: 0, scale: .65, x:"-100%", y: "400%"})
+timeline.set(".cite", {opacity: 0, scale: .55})
 
 timeline.to(".wrapper", { opacity: 0})
 //intro section
@@ -183,7 +183,7 @@ timeline.to(".wrapper", { opacity: 0})
         .to(".begin1", {scale: .8})
         .to(soviet, {opacity: 1, x: "-60%",  scale: .5}, ">")
         .to(usa,{opacity: 1, x: "60%" , scale: .5}, "<")
-        .to(".cite", {opacity: 0})
+
 
         .call(() => { document.querySelector(".firstworld1").innerHTML ="the First World"})
         .call(() => { document.querySelector(".secworld1").innerHTML ="the Second World"})
@@ -196,6 +196,7 @@ timeline.to(".wrapper", { opacity: 0})
 
         .to({}, { delay: 6 })
 
+        .to(".cite", {opacity: 0})
         .to(usa,{opacity: 0})
         .to(soviet,{opacity: 0})
 
@@ -306,12 +307,13 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:0, x: "-275%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Josip Broz Tito"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Yugoslavia"})
+            .to(".cite", {opacity: 1})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1},)
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(tito, { opacity: 0, duration: 1, delay: 10 })
-            .to(".cite", {opacity: 0})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity: 0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -323,6 +325,7 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to(".keywordSpeaker", {opacity:0, x: "-175%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "400%", y: "-350%"})
+            .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Jawaharlal Nehru"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "India"})
             .to(".cite", {opacity: 1})
@@ -343,13 +346,11 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to(".keywordSpeaker", {opacity:0, x: "250%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-300%", y: "-350%"})
+            .call(() => { document.querySelector(".cite").innerHTML ="Rodriguez, Besenia (2006) 'Long Live Third World Unity! Long Live Internationalism!'"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Sukarno"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Indonesia"})
-            .call(() => { document.querySelector(".cite").innerHTML =
-"Rodriguez, Besenia (2006) 'Long Live Third World Unity! Long Live Internationalism!'"
-})
-            .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".cite", {opacity: 1})
+            .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(suk2, { opacity: 0, duration: 1, delay: 10})
@@ -369,8 +370,8 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Julius Nyerere"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Tanzania"})
-            .to(".begin1", {x: "50%", duration: 3, opacity: 1})
             .to(".cite", {opacity:1})
+            .to(".begin1", {x: "50%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(julius, { opacity: 0, duration: 1, delay: 10})
@@ -386,18 +387,18 @@ timeline.to(".wrapper", { opacity: 0})
             .call(() => { document.querySelector(".begin1").innerHTML =
                 "Castro's leadership of the Cuban Revolution, which overthrew the US-backed Batista regime in 1959, was a major example of anti-colonial struggle and international solidarity. Castro's vision for a socialist Cuba and his commitment to international solidarity with other anti-imperialist movements, particularly in Latin America, was influential in shaping the global political landscape."
             })
-            .to(".cite", {opacity:1})
             .to(".keywordSpeaker", {opacity:0, x: "175%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "-630%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Fidel Castro"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Cuba"})
+            .to(".cite", {opacity:1})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(castro, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
-            .to(".cite", {opacity:0}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
 //ho chi
@@ -407,11 +408,11 @@ timeline.to(".wrapper", { opacity: 0})
                 "Ho Chi Minh (Vietnam): Ho Chi Minh's leadership of the Vietnamese independence movement, which fought against French colonialism and later US imperialism, was a major example of anti-colonial struggle and international solidarity. Ho's vision for a united, independent, and socialist Vietnam was influential in shaping the global political landscape."
             })
             .call(() => { document.querySelector(".cite").innerHTML ="Dipesh Chakrabarty, “Legacies of Bandung: Decolonisation and the Politics of Culture.”"})
-            .to(".cite", {opacity:1})
             .to(".keywordSpeaker", {opacity:0, x: "-250%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "250%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Ho Chi Minh"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Vietnam"})
+            .to(".cite", {opacity:1})
             .to(".begin1", {x: "50%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
@@ -434,13 +435,13 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:0, x: "-450%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Kwame Nkrumah"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Ghana"})
+            .to(".cite", {opacity:1})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
-            .to(".cite", {opacity:1})
-
             .to(kwame, { opacity: 0, duration: 1, delay: 10})
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", {opacity:0})
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -452,17 +453,17 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .call(() => { document.querySelector(".cite").innerHTML =
             "Shirley Graham DuBois, 'Gamal Abdel Nasser: Son of the Nile, a Biography'"})
-            .to(".cite", {opacity: 1})
             .to(".keywordSpeaker", {opacity:0, x: "-150%", y: "-350%"})
             .to(".keywordCountry", {opacity:0, x: "450%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Gamal Abdel Nasser"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Egypt"})
+            .to(".cite", {opacity: 1})
             .to(".begin1", {x: "50%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
             .to(nasser, { opacity: 0, duration: 1, delay: 10})
-            .to(".cite", { opacity: 0 })
             .to(".begin1", {opacity:0, duration: 1}, "<")
+            .to(".cite", { opacity: 0 })
             .to(".keywordSpeaker", {opacity:0, duration: 1}, "<")
             .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 
@@ -477,11 +478,10 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".keywordCountry", {opacity:0, x: "-425%", y: "-350%"})
             .call(() => { document.querySelector(".keywordSpeaker").innerHTML ="Ahmed Ben Bella"})
             .call(() => { document.querySelector(".keywordCountry").innerHTML = "Algeria"})
+            .to(".cite", {opacity:1})
             .to(".begin1", {x: "-45%", duration: 3, opacity: 1})
             .to(".keywordSpeaker", {opacity:1, duration: 3}, "=-1")
             .to(".keywordCountry", {opacity:1, duration: 3}, "<")
-            .to(".cite", {opacity:1})
-
             .to(benbella, { opacity: 0, duration: 1, delay: 2})
             .to(".begin1", {opacity:0, duration: 1}, "<")
             .to(".cite", {opacity:0})
@@ -492,6 +492,7 @@ timeline.to(".wrapper", { opacity: 0})
 //marx
             .to("body", { backgroundImage: "none", backgroundColor: "black" })
             .call(() => { document.querySelector(".NameM").innerHTML ="MARX"})
+            .to(".NameM", {opacity: 1})
             .to({}, {delay: 2})
             .to(".NameM",  { y: "-30vh", x: "-35vw", duration: 1, delay:1.15, scale: .4})
             .to(marx, {opacity: 1})
@@ -502,38 +503,34 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to(".begin2", {opacity:1, duration: 1})
             .to({}, { delay: 2 })
-
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Karl Marx, 'Wage labour and capital' "})
             .call(() => { document.querySelector(".begin2").innerHTML =
 
 "A small class of capitalists or owners control the means of production, while the majority of people, the working class or proletariat, do not own the means of production and must sell their labor in order to survive."
             })
-            .to({}, { delay: 2 })
-
-            .call(() => { document.querySelector(".cite").innerHTML =
-"Karl Marx, 'Wage labour and capital' "            })
-            .to({}, { delay: 2 })
-
-            .to(".cite", {opacity:1})
+            .to(".cite", {opacity:1}, "<")
+            .to({}, { delay: 10 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Capitalism has an inherent drive to expand and grow, as capitalists seek to increase their profits through the accumulation of capital."
             })
-            .to({}, { delay: 2 })
+            .to({}, { delay: 8 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "The expansion of capitalism in the 19th century resulted in:"
             })
-            .to({}, { delay: 2 })
+            .to({}, { delay: 4 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "European powers colonizing much of Africa and Asia to access new markets and resources, leading to the exploitation of local populations and the creation of new forms of class antagonism."
             })
-            .to({}, { delay: 2 })
+            .to({}, { delay: 10 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "The growth of industrial capitalism in the United States in the late 19th and early 20th centuries led to the exploitation of immigrant labor and the development of new forms of class conflict."
              })
-             .to({}, { delay: 2 })
+             .to({}, { delay: 10 })
             .to(".cite", {opacity: 0})
             .to(".begin2", {opacity: 0})
 
@@ -541,6 +538,7 @@ timeline.to(".wrapper", { opacity: 0})
 //lenin
             .to(".NameM", {opacity:0}, "<")
             .call(() => { document.querySelector(".NameL").innerHTML ="LENIN"})
+            .to(".NameL", {opacity: 1})
             .to({}, {delay: 2})
             .to(".NameL",  { y: "-30vh", x: "-55vw", duration: 1, delay:1.15, scale: .4})
             .to(lenin, {opacity: 1})
@@ -553,24 +551,22 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".begin2", { opacity:1})
              .to({}, {delay: 2 })
 
+             .call(() => { document.querySelector(".cite").innerHTML =
+"Vladimir Lenin, 'Imperialism: The Highest Stage of Capitalism'"
+            })
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Imperialism is the highest stage of capitalism, in which monopolies and finance capital dominated the global economy and competed for control over resources and markets."
             })
-            .to({}, { delay: 2 })
+            .to(".cite", { opacity: 1 }, "<")
+            .to({}, { delay: 9 })
 
-                        .call(() => { document.querySelector(".cite").innerHTML =
-"Vladimir Lenin, 'Imperialism: The Highest Stage of Capitalism'"
-            })
-
-            .to(".cite", { opacity: 1 })
 
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Imperialism intensified class antagonisms and created new forms of oppression, as capitalist powers sought to control resources and labor in the colonies and semi-colonies."
             })
-            .to(".begin2", {opacity:1}) /////////////delete///////////
+            .to({}, { delay: 9 })
 
-            .to({}, { delay: 2 })
             .to(".begin2", {opacity:0})
             .to(imperialism, { opacity: 1 })
 
@@ -582,30 +578,25 @@ timeline.to(".wrapper", { opacity: 0})
             })
             .to(".begin2", {opacity:1})
 
-            .to({}, { delay: 2 })
+            .to({}, { delay: 10 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Lenin saw the struggle against imperialism as central to the broader struggle for socialism, as it exposed the inherent contradictions and exploitative nature of capitalism."
             })
-            .to({}, { delay: 2 })
+            .to({}, { delay: 9 })
             .to(".cite", { opacity: 0 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Both Marx and Lenin saw history as the result of the dialectical interplay of forces, with conflicts and struggles driving social change."
             })
-            .to({}, { delay: 2 })
-
+            .to({}, { delay: 8 })
             .to(".begin2", { opacity: 0 })
-
-
-
-
-        .to("body", { backgroundImage: "none", backgroundColor: "black" })
 
 
 //fanon
             .to(".NameL", {opacity:0}, "<")
             .call(() => { document.querySelector(".NameF").innerHTML ="FANON"})
+            .to(".NameF", {opacity: 1})
             .to({}, {delay: 2})
             .to(".NameF",  { y: "-30vh", x: "-55vw", duration: 1, delay:1.15, scale: .4})
             .to(fanon, {opacity: 1})
@@ -616,113 +607,103 @@ timeline.to(".wrapper", { opacity: 0})
             })
                         .to(".begin2", { opacity: 1 })
 
-            .to({}, { delay: 4 })
+            .to({}, { delay: 9 })
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Fanon, a psychiatrist and revolutionary, argued that colonialism not only had economic and political effects but also had powerful psychological effects on both the colonized and the colonizers."
             })
-            .to({}, { delay: 4 })
-            .call(() => { document.querySelector(".begin2").innerHTML =
+            .to({}, { delay: 9 })
 
+
+            .call(() => { document.querySelector(".cite").innerHTML =
+"Frantz Fanon, 'The Wretched of the Earth'"})
+            .call(() => { document.querySelector(".begin2").innerHTML =
 "Fanon saw colonialism as a process that destroyed the dynamism of colonized people and established defense mechanisms. The colonized person is made to admit the inferiority of their culture, nation, and even their own biological structure. This instills a powerful form of racism into the thinking of the victims as well as the oppressors. "
             })
-                        .call(() => { document.querySelector(".cite").innerHTML =
-"Frantz Fanon, 'The Wretched of the Earth'"})
-            .to(".cite", {opacity: 1})
-            .to({}, { delay: 4 })
+            .to(".cite", {opacity: 1}, "<")
+            .to({}, { delay: 15 })
+
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "This mirrors Lenin's argument that imperialism creates a division between the ruling and colonized classes, creating a culture of racism and prejudice that benefits the ruling class."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 9 })
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Fanon also saw the development of a national literature as a crucial aspect of the movement for national liberation. He argued that the native intellectual, who used to produce work to be read exclusively by the oppressor, should progressively take on the habit of addressing their own people. This creates a literature of combat, which calls on the whole people to fight for their existence as a nation. This idea echoes Lenin's call for national liberation movements to create a united front against imperialism."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 23 })
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Ultimately, Fanon's call for the development of a 'new man' is a rejection of the European model of Man that has dominated global history. "})
-            .to({}, { delay: 4 })
+            .to({}, { delay: 7 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
 "Fanon argues that the 'Third World' needs to create a new history of Man, one that is not based on the exploitative and oppressive models of Europe and the United States. This call for a new history echoes Lenin's belief that imperialism is a system that is incompatible with the survival of humanity and that the only way to overcome it is through revolution."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 15 })
             .to(".cite", {opacity: 0})
-            .to(".begin2", { opacity: 0 })
+            .to(".begin2", { opacity: 0 }, "<")
 
 //huey
             .to(".NameF", {opacity:0}, "<")
             .call(() => { document.querySelector(".NameH").innerHTML ="HUEY"})
+            .to(".NameH", {opacity: 1})
             .to({}, {delay: 2})
             .to(".NameH",  { y: "-30vh", x: "-35vw", duration: 1, delay:1.15, scale: .4})
             .to(huey, { opacity: 1})
             .to(huey, { opacity: 0, delay: 2})
 
             .call(() => { document.querySelector(".begin2").innerHTML =
-
 "Huey P. Newton coined the terms 'reactionary intercommunalism' and 'revolutionary intercommunalism,' which can be seen as extensions of Marxist and anti-imperialist thought that emerged in the 20th century."
             })
             .to(".begin2", { opacity: 1 })
-
-            .to({}, { delay: 2 })
-
-            .to(huey2, { opacity: 1})
-
-            .to({}, { delay: 2 })
-            .to(huey2, { opacity: 0})
-
-            .call(() => { document.querySelector(".cite").innerHTML =
-"Excerpt from Huey P. Newton, 'Revolutionary intercommunalism and the right of nations to self-determination'"
-})
-
-            .to(".cite", {opacity: 1})
+            .to({}, { delay: 9 })
+            .call(() => { document.querySelector(".cite").innerHTML ="Excerpt from Huey P. Newton, 'Revolutionary intercommunalism and the right of nations to self-determination'"})
             .call(() => { document.querySelector(".begin2").innerHTML =
             "The Black Panther Party has chosen materialist assumptions on which to ground its ideology. This is a purely arbitrary choice. Idealism might be the real happening; we might not be here at all. We don’t really know whether we are in Connecticut or in San Francisco, whether we are dreaming and in a dream state, or whether we are awake and in a dream state. Perhaps we are just somewhere in a void; we simply can’t be sure. "
             })
-            .to({}, { delay: 4 })
+            .to(".cite", {opacity: 1}, "<")
+            .to({}, { delay: 20 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
             "For the purposes of discussion, I merely ask that we agree on the stipulation that a material world exists and develops externally and independently of us all. With this stipulation, we have the foundation for an intelligent dialogue. We assume that there is a material world and that it exists and develops independently of us; and we assume that the human organism, through its sensory system, has the ability to observe and analyze that material world."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 21 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
             "The dialectical materialist believes that everything in existence has fundamental internal contradictions. "
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 7 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
             "For example, the African gods south of the Sahara always had at least two heads, one for evil and one for good. Now people create God in their own image, what they think He—for God is always a “He” in patriarchal societies—what He is like or should be. So the African said, in effect: I am both good and evil; good and evil are the two parts of the thing that is me. This is an example of an internal contradiction."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 22 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
             "Western Societies, though, split up good and evil, placing God up in heaven and the Devil down in hell. Good and evil fight for control over people in Western religions, but they are two entirely different entities. This is an example of an external contradiction."
             })
-            .to({}, { delay: 4 })
+            .to({}, { delay: 13 })
 
             .call(() => { document.querySelector(".begin2").innerHTML =
             "This struggle of mutually exclusive opposing tendencies within everything that exists explains the observable fact that all things have motion and are in a constant state of transformation. "})
-            .to({}, { delay: 4 })
-                        .call(() => { document.querySelector(".begin2").innerHTML =
+            .to({}, { delay: 10 })
 
+            .call(() => { document.querySelector(".begin2").innerHTML =
             "Things transform themselves because while one tendency or force is more dominating than another, change is nonetheless a constant, and at some point the balance will alter and there will be a new qualitative development. New properties will come into existence, qualities that did not altogether exist before. Such qualities cannot be analyzed without understanding the forces struggling within the object in the first place, yet the limitations and determinations of these new qualities are not defined by the forces that created them."
                        })
-                        .to({}, { delay: 4 })
+            .to({}, { delay: 27 })
 
-                        .to(".cite", {opacity: 0})
-                        .call(() => { document.querySelector(".begin2").innerHTML =
-            "According to Newton, dialectical materialism helps to identify how the key center of conflict in any situation may have shifted. The Black Panther Party began as a black nationalist organization that invested their efforts in pursuing a politics concerned with defending and empowering Black people as a distinct community. From the start, they critiqued cultural nationalist approaches, noting both their ineffectiveness for significantly changing the lives of most Black people and their popularity among more educated and affluent African Americans."
-                        })
-                        .to({}, { delay: 4 })
+            .to(".cite", {opacity: 0})
+            .call(() => { document.querySelector(".begin2").innerHTML =
+            "According to Newton, dialectical materialism helps to identify how the key center of conflict in any situation may have shifted. The Black Panther Party began as a black nationalist organization that invested their efforts in pursuing a politics concerned with defending and empowering Black people as a distinct community. From the start, they critiqued cultural nationalist approaches, noting both their ineffectiveness for significantly changing the lives of most Black people and their popularity among more educated and affluent African Americans."})
+            .to({}, { delay: 28 })
 
-                        .call(() => { document.querySelector(".begin2").innerHTML =
-"Class conflict develops by the same principles that govern all other phenomena in the material world. In contemporary society, a class that owns property dominates a class that does not own property. There is a class of workers and class of owners, and because there exists a basic contradiction in the interests of these two classes, they are constantly struggling with one another. Now, because things do not stay the same we can be sure of one thing: the owner will not stay the owner, and the people who are dominated will not stay dominated. We don’t know exactly how this will happen, but after we analyze all the other elements of the situation, we can make a few predictions. We can be sure that if we increase the intensity of the struggle, we will reach a point where the equilibrium of forces will change and there will be a qualitative leap into a new situation with a new social equilibrium.  I say “leap” because we know from our experience of the physical world than when transformations of this kind occur they do so with great force."
-                        .to({}, { delay: 4 })
+            .call(() => { document.querySelector(".begin2").innerHTML =
+            "Class conflict develops by the same principles that govern all other phenomena in the material world. In contemporary society, a class that owns property dominates a class that does not own property. There is a class of workers and class of owners, and because there exists a basic contradiction in the interests of these two classes, they are constantly struggling with one another. Now, because things do not stay the same we can be sure of one thing: the owner will not stay the owner, and the people who are dominated will not stay dominated. We don’t know exactly how this will happen, but after we analyze all the other elements of the situation, we can make a few predictions. We can be sure that if we increase the intensity of the struggle, we will reach a point where the equilibrium of forces will change and there will be a qualitative leap into a new situation with a new social equilibrium.  I say “leap” because we know from our experience of the physical world than when transformations of this kind occur they do so with great force."
+            .to({}, { delay: 4 })
 
-                        .call(() => { document.querySelector(".begin2").innerHTML =
-            "In 1970, Newton announced an offer of troops on behalf of the Black Panther Party to the National Liberation Front of South Vietnam as a material expression of internationalist solidarity."
-                        })
-                        .to({}, { delay: 4 })
+            .call(() => { document.querySelector(".begin2").innerHTML =
+            "In 1970, Newton announced an offer of troops on behalf of the Black Panther Party to the National Liberation Front of South Vietnam as a material expression of internationalist solidarity."})
+            .to({}, { delay: 4 })
 
                         "This announcement was a material expression of internationalist solidarity, reflecting Newton's strong belief in anti-colonial struggles and his deep commitment to the principles of the Non-Aligned Movement."
                   })
