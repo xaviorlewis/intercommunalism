@@ -92,7 +92,7 @@ const hardtnegri = createImage("./images/hardtnegri.jpg", 510, 778, 0);
 const wallerstein = createImage("./images/wallerstein.jpg", 600, 951, 0);
 const biennial = createImage("./images/overtonbiennial.png", 1678, 1868, 0);
 const overtonday = createImage("./images/overtonday.png", 2192, 1126, 0);
-//const toollib = createImage("./images/toollibrary.png", 980, 728, 0);
+const overton = createImage("./images/overton.png", 2792, 1568, 0);
 const toollib = createImage("./images/toollibrary.png", 1225, 910, 0);
 const vacant = createImage("./images/tfvacant.png", 2780, 996, 0);
 const tfmap = createImage("./images/tfmap.png", 2792, 1568, 0);
@@ -114,7 +114,7 @@ timeline.to(".wrapper", { opacity: 0})
         .to(".intro", { y: "-100%", duration: 1 })
 
        ////////intercommunalism
-       .to(".big-text", {x: "20%", duration: 2.75})
+       .to(".big-text", {x: "40%", duration: 2.75})
        .fromTo(".big-text2", { opacity: 0 }, { marginLeft:"-20%", opacity: 1, duration: 2})
        .to(".big-text2", { duration: 3.5}, "-1")
        .to(".big-text", { opacity: 0 } )
@@ -256,23 +256,22 @@ timeline.to(".wrapper", { opacity: 0})
 "Bhambra, Gurminder K. and Narayan, John (2016) 'Colonial histories and the post-colonial present of European cosmopolitanism'"
 })
 
-       .to(".cite", { opacity: 1 })
-
 
        .call(() => { document.querySelector(".begin1").innerHTML =
       "  The principles emphasized respect for sovereignty, territorial integrity, and non-interference in the internal affairs of other nations."})
-       .to({}, { delay: 6 })
+              .to(".cite", { opacity: 1 })
 
-       .to(".cite", { opacity: 0 })
+  .to({}, { delay: 6 })
+
 
 
        .call(() => { document.querySelector(".begin1").innerHTML =
 
 "The Ten Principles provided a framework for cooperation among the participating countries and became a rallying point for other non-aligned nations."
 })
-       .to(".cite", { opacity: 1 })
-
        .to({}, { delay: 6 })
+       .to(".cite", { opacity: 0 })
+
        .to(".begin1", {opacity: 0, duration: 1})
        .to({}, {delay: 1})
        .to("body", { backgroundImage: "none", backgroundColor: "black" })
@@ -555,7 +554,7 @@ timeline.to(".wrapper", { opacity: 0})
            .call(() => { document.querySelector(".NameL").innerHTML ="LENIN"})
            .to(".NameL", {opacity: 1})
            .to({}, {delay: 2})
-           .to(".NameL",  { y: "-30vh", x: "-55vw", duration: 1, delay:1.15, scale: .4})
+           .to(".NameL",  {  y: "-30vh", x: "-35vw", duration: 1, delay:1.15, scale: .4})
            .to(lenin, {opacity: 1})
            .to(lenin, {opacity: 0, delay: 2})
 
