@@ -803,6 +803,8 @@ timeline.to(".wrapper", { opacity: 0})
            .to(".cite", { opacity: 1 }, "<")
            .to({}, { delay: 15 })
            .to(".cite", { opacity: 0})
+           .to(".NameH", {opacity: 0})
+
 
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Newton, this work contends, mastered the language of post-colonialism, and as such developed a materialist theory, an action plan that will build society into one that is 'essentially human'."
@@ -880,7 +882,7 @@ timeline.to(".wrapper", { opacity: 0})
            .to(".begin2", {opacity: 0})
 
 
-
+            
 
             .to(biennial, { opacity: 1, scale: .40, x: "-25%"})
             .to(biennial, { opacity: 0, delay: 4})
