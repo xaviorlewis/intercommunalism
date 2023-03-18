@@ -87,6 +87,7 @@ const julius = createImage("./globalpeople/julius.jpg", 1000, 600, 0);
 const kwame = createImage("./globalpeople/kwame.jpg", 1000, 600, 0);
 const tito = createImage("./globalpeople/tito.jpg", 1000, 600, 0);
 const fanon = createImage("./globalpictures/fanon.png", 1000, 600, 0);
+const huey2 = createImage("./globalpictures/huey2.jpg", 510, 778, 0);
 
 const hardtnegri = createImage("./images/hardtnegri.jpg", 510, 778, 0);
 const wallerstein = createImage("./images/wallerstein.jpg", 600, 951, 0);
@@ -721,6 +722,44 @@ timeline.to(".wrapper", { opacity: 0})
            "Facing backlash from Black people as well as the federal government, Newton critiques internationalism by addressing the ideological relationship of the Black community in particular to American nationalism. Americans, including the marginalized, poor, and recently immigrated among us, uphold the false belief in their exceptionalism and superiority or at least the moral superiority of their founding ideals."})
            .to({}, { delay: 20 })
 
+            .call(() => { document.querySelector(".begin2").innerHTML =
+            "Newton's time in solitary confinement led him to a new articulation of his theory of change, explaining his decision. He, and by extension, the Black Panther Party adopted dialectical materialism as its philosophy because it offers a more comprehensive understanding of the world and its transformative processes."})
+
+           .to({}, { delay: 11 })
+
+            .call(() => { document.querySelector(".begin2").innerHTML =
+
+            "Dialectical materialism provides a framework for understanding the interplay of opposing forces and their synthesis, resulting in continual change and development in the material world. It also allows for the study of the relationship between the economic base and the ideological superstructure of society. This philosophical perspective is crucial for Newton's theory of intercommunalism, which examines the global dynamics of capitalism and the decline of nation-states."})
+           .to({}, { delay: 14 })
+
+            .call(() => { document.querySelector(".begin2").innerHTML =
+
+            "In Newton's view, the United States is an empire rather than a nation due to its extensive control over other countries and their resources. He identifies this phase of capitalism as 'reactionary intercommunalism' – a condition where nation-states have lost their political influence and are replaced by interconnected communities under the control of global capital, particularly the U.S. empire."})
+           .to({}, { delay: 14 })
+
+            .call(() => { document.querySelector(".begin2").innerHTML =
+
+            "The theory of intercommunalism aspires to describe how revolutionary change might unfold under these conditions and prescribe how one might actively participate in such a project. Newton's analysis emphasizes the potential for revolutionary transformation arising from the interconnectedness of the global population, brought together by their shared relationship to the workplaces and technologies controlled by a small set of corporations and states."})
+           .to({}, { delay: 14 })
+
+
+            .call(() => { document.querySelector(".begin2").innerHTML =
+
+            "Ultimately, Newton's intercommunalism is a call for a collective struggle against the global capitalist empire. By seizing the material structures that enable production, technology, and information media, communities can fight to build a cooperative framework – 'revolutionary intercommunalism' – that challenges the hegemony of the U.S. empire and the capitalist system."})})             
+            .to({}, { delay: 14 })
+            
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 //////////////////////////////
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Newton argued that imperialism had evolved into a new form in the post-World War II era, which he called 'intercommunalism.' This new form of imperialism was characterized by the breakdown of national borders and the emergence of a global capitalist system dominated by multinational corporations and the military-industrial complex."
@@ -782,6 +821,9 @@ timeline.to(".wrapper", { opacity: 0})
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Consequently, traditional aspects of nationhood, such as economic independence, cultural determination, political institution control, territorial integrity, and safety, have become obsolete for both the US and other nations." })
 
+    .call(() => {
+            document.querySelector(".cite").innerHTML = "John Narayan, 'Huey P. Newton’s Intercommunalism'" })
+
            .to(".cite", { opacity: 1 }, "<")
            .to({}, { delay: 13 })
            .to(".cite", { opacity: 0})
@@ -800,12 +842,17 @@ timeline.to(".wrapper", { opacity: 0})
            .to(".cite", { opacity: 0})
 
 
+           .to("body", { backgroundImage: "url('./images/hardtnegri.jpg')" , delay: 1}, "<")
+
+
            .call(() => {document.querySelector(".cite").innerHTML = "Michael Hardt and Antonio Negri, 'Empire'"})
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Hardt and Negri's work on the global aristocracy of empire is a more direct extension of Newton's ideas. In their book 'Empire,' they describe a transition from traditional imperialism to a new form of global power structure, where nation-states are no longer the primary actors. This new form of empire resonates with Newton's thoughts on the erosion of national sovereignty and the rise of an international bourgeoisie that transcends national boundaries."})
            .to(".cite", { opacity: 1 }, "<")
            .to({}, { delay: 26 })
            .to(".cite", { opacity: 0 })
+           .to("body", { backgroundImage: "url('./images/wallerstein.jpg')" , delay: 1}, "<")
+
 
            .call(() => {document.querySelector(".cite").innerHTML =
            "Immanuel Wallerstein, 'The Rise and Future Demise of the World-Capitalist System: Concepts for Comparative Analysis'"})
@@ -814,6 +861,8 @@ timeline.to(".wrapper", { opacity: 0})
            .to(".cite", { opacity: 1 }, "<")
            .to({}, { delay: 28 })
            .to(".cite", { opacity: 0 })
+           .to("body", { backgroundImage: "url('./images/huey2.jpg')" , delay: 1}, "<")
+
 
            .call(() => { document.querySelector(".begin2").innerHTML =
            "This hierarchical structure is consistent with Newton's observations on how the US empire and its international bourgeoisie impose their interests on Third World nations and former European imperial powers, leading to the sacrifice of their theoretical national sovereignty."})
@@ -826,14 +875,6 @@ timeline.to(".wrapper", { opacity: 0})
 
 
 
-
-            .to(hardtnegri, { opacity: 1})
-            .to(hardtnegri, {x: "-85%", duration: 1, delay: 1})
-            .to(hardtnegri, { opacity: 0, delay: 4})
-
-            .to(wallerstein, { opacity: 1})
-            .to(wallerstein, {x: "80%", duration: 1, delay: 1, scale: .8})
-            .to(wallerstein, { opacity: 0, delay: 4})
 
             .to(biennial, { opacity: 1, scale: .40, x: "-25%"})
             .to(biennial, { opacity: 0, delay: 4})
