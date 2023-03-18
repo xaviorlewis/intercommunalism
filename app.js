@@ -497,6 +497,13 @@ timeline.to(".wrapper", { opacity: 0})
 //            .to(".keywordCountry", {opacity:0, duration: 1}, "<")
 //
 
+
+           .call(() => { document.querySelector(".begin2").innerHTML =
+"The Bandung Conference and Non-Aligned Movement emerged from a shared desire to resist the influence of global superpowers, embodying the anti-colonial and anti-imperialist spirit of certain influential thinkers. These visionaries, whose ideologies spanned communism, socialism, and revolutionary nationalism, sought to create a world where nations could prosper outside of the dominant Cold War paradigms."})
+
+           .to({}, {delay: 8})
+
+
 //marx
             .to("body", { backgroundImage: "none", backgroundColor: "black" })
            .call(() => { document.querySelector(".NameM").innerHTML ="MARX"})
