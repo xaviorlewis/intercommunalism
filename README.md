@@ -11,4 +11,8 @@ The intellectual contributions of oppressed individuals from around the world ar
 
 
 
-if your **browser + device + screen size** combination has not yet been configured please peep the recording below:
+
+
+
+
+(if your **browser + device + screen size** combination has not yet been configured please peep the recording:)
