@@ -926,10 +926,10 @@ timeline.to(".wrapper", { opacity: 0})
             .to(toollib, { opacity: 0, delay: 4})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
-"The Chicago Tool Library is an essential partner in the community development efforts taking place in the South Side. By providing local residents with access to tools and resources, the library enables community members to take an active role in transforming their neighborhoods, further promoting the ideals of revolutionary intercommunalism."
+"The Chicago Tool Library is an essential partner in the community development efforts taking place in the South Side. By providing local residents with access to tools and resources, the library enables community members to take an active role in transforming their neighborhoods, further promoting the ideals of revolutionary intercommunalism."})
            .to({}, { delay: 8 })
                             .call(() => { document.querySelector(".begin2").innerHTML =
-"Inspired by Huey P. Newton's visionary legacy as the father of modern post-colonial theory, revolutionary intercommunalism offers a transformative path forward for communities worldwide. Through the powerful examples of community self-determination showcased in our case studies, we witness the potential of this framework to unite us in building a more equitable, sustainable, and interconnected future for all."
+"Inspired by Huey P. Newton's visionary legacy as the father of modern post-colonial theory, revolutionary intercommunalism offers a transformative path forward for communities worldwide. Through the powerful examples of community self-determination showcased in our case studies, we witness the potential of this framework to unite us in building a more equitable, sustainable, and interconnected future for all."})
 
 
 
