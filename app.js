@@ -114,7 +114,7 @@ timeline.to(".wrapper", { opacity: 0})
         .to(".intro", { y: "-100%", duration: 1 })
 
        ////////intercommunalism
-       .to(".big-text", {x: "40%", duration: 2.75})
+       .to(".big-text", {x: "47%", duration: 2.75})
        .fromTo(".big-text2", { opacity: 0 }, { marginLeft:"-20%", opacity: 1, duration: 2})
        .to(".big-text2", { duration: 3.5}, "-1")
        .to(".big-text", { opacity: 0 } )
@@ -160,7 +160,7 @@ timeline.to(".wrapper", { opacity: 0})
        .to(".mcountry", { opacity: 0}, ">")
 
 
-       .to(suk1, {scale: .75, y: "-20%", opacity:1}, "=-4")
+       .to(suk1, {scale: .75, y: "-30%", opacity:1}, "=-4")
        .to(".begin1", {opacity:1, y: "80%", height: "fit-content"},"=-4")
 //
        .to({}, {delay: 4})
@@ -500,7 +500,7 @@ timeline.to(".wrapper", { opacity: 0})
            .call(() => { document.querySelector(".begin2").innerHTML =
 "The Bandung Conference and Non-Aligned Movement emerged from a shared desire to resist the influence of global superpowers, embodying the anti-colonial and anti-imperialist spirit of certain influential thinkers. These visionaries, whose ideologies spanned communism, socialism, and revolutionary nationalism, sought to create a world where nations could prosper outside of the dominant Cold War paradigms."})
 
-           .to({}, {delay: 8})
+           .to({}, {delay: 5})
 
 
 //marx
@@ -508,7 +508,7 @@ timeline.to(".wrapper", { opacity: 0})
            .call(() => { document.querySelector(".NameM").innerHTML ="MARX"})
            .to(".NameM", {opacity: 1})
            .to({}, {delay: 2})
-           .to(".NameM",  { y: "-30vh", x: "-35vw", duration: 1, delay:1.15, scale: .4})
+           .to(".NameM",  { y: "-30vh", x: "-35vw", duration: 1, delay:.85, scale: .4})
            .to(marx, {opacity: 1})
            .to(marx, {opacity: 0, delay: 2})
 
@@ -889,9 +889,12 @@ timeline.to(".wrapper", { opacity: 0})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
             "The Overton Center for Excellence, an abandoned elementary school in the South Side of Chicago, represents a significant example of community-driven revitalization. Through a partnership with the Ambassador of Denmark to the United States, Christina Markus Lassen, a local community development organization was able to purchase the school and host the renowned Chicago Architecture Biennial, raising awareness of and support for ongoing redevelopment efforts."})
-           .to({}, { delay: 10 })
+             .to(".begin2", {opacity: 1})
+         
+  .to({}, { delay: 10 })
 
             .to(overton, { opacity: 0})
+           .to(".begin2", {opacity: 0})
 
             .to(biennial, { opacity: 1, scale: .40})
             .to(biennial, { opacity: 0, delay: 10})
@@ -901,6 +904,7 @@ timeline.to(".wrapper", { opacity: 0})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
 "At the heart of the transformation of Overton is the Terra Firma Initiative, which exemplifies the principles of revolutionary intercommunalism. This initiative focuses on hiring community members to remediate and plant on vacant lots throughout the South Side, creating opportunities for local residents to take an active role in the revitalization of their neighborhoods."})
+           .to(".begin2", {opacity: 1})
 
            .to({}, { delay: 8 })
 
@@ -911,11 +915,15 @@ timeline.to(".wrapper", { opacity: 0})
            .call(() => { document.querySelector(".begin2").innerHTML =
 
 "The proposed designs for the vacant lots in the South Side prioritize the creation of green spaces that cater to the needs and desires of the community. By involving local residents in the design and implementation process, these spaces become a true reflection of the people they serve and foster a sense of ownership and pride."})
-           .to({}, { delay: 8 })
+                      .to(".begin2", {opacity: 1})
+
+  .to({}, { delay: 8 })
            .call(() => { document.querySelector(".begin2").innerHTML =
 
 "The Terra Firma Initiative is not limited to a single location, but instead spans across the South Side of Chicago. As the map shows, this interconnected network of green spaces and revitalized communities contributes to the larger goal of fostering a sustainable, vibrant, and interconnected urban environment."})
-            .to(tfmap, { opacity: 1, scale: .5})
+                                  .to(".begin2", {opacity: 0})
+
+  .to(tfmap, { opacity: 1, scale: .5})
            .to({}, { delay: 8 })
 
             .to(tfmap, { opacity: 0, delay: 4})
@@ -926,13 +934,15 @@ timeline.to(".wrapper", { opacity: 0})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
 "The Chicago Tool Library is an essential partner in the community development efforts taking place in the South Side. By providing local residents with access to tools and resources, the library enables community members to take an active role in transforming their neighborhoods, further promoting the ideals of revolutionary intercommunalism."})
-           .to({}, { delay: 8 })
+                                 .to(".begin2", {opacity: 1})
+
+  .to({}, { delay: 8 })
                             .call(() => { document.querySelector(".begin2").innerHTML =
 "Inspired by Huey P. Newton's visionary legacy as the father of modern post-colonial theory, revolutionary intercommunalism offers a transformative path forward for communities worldwide. Through the powerful examples of community self-determination showcased in our case studies, we witness the potential of this framework to unite us in building a more equitable, sustainable, and interconnected future for all."})
 
 
 
-                                   .to({}, { delay: 10 })
+                                   .to({}, { delay: 7 })
            .to(".begin2", { opacity: 0 })
                         .to(".big-text", {opacity: 1, scale: 1.5})
 
