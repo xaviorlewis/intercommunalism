@@ -87,7 +87,6 @@ const julius = createImage("./globalpeople/julius.jpg", 1000, 600, 0);
 const kwame = createImage("./globalpeople/kwame.jpg", 1000, 600, 0);
 const tito = createImage("./globalpeople/tito.jpg", 1000, 600, 0);
 const fanon = createImage("./globalpictures/fanon.png", 1000, 600, 0);
-const huey3 = createImage("./globalpictures/huey2.jpg", 510, 778, 0);
 
 const hardtnegri = createImage("./images/hardtnegri.jpg", 510, 778, 0);
 const wallerstein = createImage("./images/wallerstein.jpg", 600, 951, 0);
