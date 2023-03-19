@@ -876,33 +876,84 @@ timeline.to(".wrapper", { opacity: 0})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Newton's unifying theory of empire can be seen as a precursor to these later theorists, as it synthesizes and expands upon the economic, cultural, and political dimensions of imperialism. By highlighting the nexus of corporate and government power and its consequences for nationhood and sovereignty, Newton provides a comprehensive understanding of the complex dynamics of modern imperialism. His work thus serves as a foundation for further development of the ideas of Fanon, Marx, Lenin, Hardt and Negri, and Wallerstein, offering a nuanced and integrated perspective on the interplay between global power structures and the consequences of imperialism."})
-           .to({}, { delay: 27 })
+           .to({}, { delay: 23 })
            .to(".begin2", {opacity: 0})
+          
+  .call(() => { document.querySelector(".big-text").innerHTML = "intercommunalism in action"
+           .to(".big-text", {opacity: 1})
+           .to({}, { delay: 4 })
+           .to(".big-text", {opacity: 0})
+               
+                          .call(() => { document.querySelector(".begin2").innerHTML =
+           
+"It is essential to understand the practical application of his ideas within contemporary contexts. Newton's emphasis on the complex dynamics of imperialism and the interplay between global power structures provides a framework for examining and addressing the systemic issues that often plague marginalized communities."})
+                                     .to(".begin2", {opacity: 1})
+
+                                 .to({}, { delay: 10 })
+
+                                     .to(".begin2", {opacity: 0})
+
+           .to("body", { backgroundImage: "url('./globalpictures/overtoncenter.png')" , delay: 1}, "<")
+           .to({}, { delay: 4 })
 
 
-            .to(overton, { opacity: 1, scale: .85})
-           .to({}, { delay: 5 })
 
-            .to(overton, { opacity: 0})
+
+            .call(() => { document.querySelector(".begin2").innerHTML =
+
+"The Overton Center for Excellence stands as a shining example of community-driven transformation and innovation, embodying the principles of Huey P. Newton's revolutionary intercommunalism. Located in the heart of Chicago's Washington Park neighborhood, the once-abandoned Overton Elementary School has been revitalized into a dynamic community hub that fosters collaboration, creativity, and collective action. Through the efforts of Borderless Studio and the Washington Park Development Group, in partnership with Creative Grounds, the Overton Center for Excellence has emerged as a model for empowering communities to take control of their own destinies and address societal challenges through grassroots initiatives."})
+
+                                     .to(".begin2", {opacity: 1})
+
+
+                          .call(() => { document.querySelector(".begin2").innerHTML =
+
+"The partnership between Borderless Studio and the Washington Park Development Group in transforming Overton demonstrates a practical application of Newton's ideas by prioritizing community needs and aspirations. By engaging locals in the decision-making processes, Overton's revitalization reflects the principles of self-determination and autonomy that are central to Newton's theory of revolutionary intercommunalism. The CHANGE acronym, encompassing Climate, Health, Arts & Culture, Next Generation, Growth, and Education, aligns with the holistic approach to societal issues that Newton advocated for in addressing the multifaceted consequences of imperialism."})
+
+                          .call(() => { document.querySelector(".begin2").innerHTML =
+
+"Moreover, the various collaborative creative projects and the mutual aid market hosted by the Overton Center for Excellence emphasize the importance of shared resources and cooperation among community members. These initiatives not only foster a sense of belonging and unity but also serve to challenge the oppressive systems perpetuated by the nexus of corporate and government power that Newton critiqued. In doing so, the Overton Center for Excellence effectively embodies Newton's vision for revolutionary intercommunalism as a means of dismantling the structures that contribute to the marginalization and disempowerment of communities."})
+           
+                      .call(() => { document.querySelector(".begin2").innerHTML =
+
+"Borderless Studio partnered with the Washington Park Development Group through Creative Grounds. Together, they embarked on a mission to transform the school into a community hub for creative innovation. Their vision was to create the Overton Center for Excellence, a space that would foster cooperation, shared resources, and a holistic approach to societal issues under the acronym CHANGE (Climate, Health, Arts & Culture, Next Generation, Growth and Education)."})
+
+           .call(() => { document.querySelector(".begin2").innerHTML =
+
+"Through community-led design activation projects, the Overton Center for Excellence brought the principles of revolutionary intercommunalism to life. Locals were engaged and empowered in the decision-making processes, ensuring that the community's needs and aspirations were at the forefront of the transformation."})
+
+
+                          .call(() => { document.querySelector(".begin2").innerHTML =
+         
+                        
+"As Overton's revitalization unfolded, it became a vibrant space that cultivated exchange and collaboration among community members. The center hosted a plethora of collaborative creative projects, including art and design installations, workshops, exhibitions, and even a mutual aid market. Each initiative reflected the school's history and celebrated its legacy, while simultaneously introducing its renewed identity as a beacon of hope and innovation."})
+
 
 
            .call(() => { document.querySelector(".begin2").innerHTML =
-            "The Overton Center for Excellence, an abandoned elementary school in the South Side of Chicago, represents a significant example of community-driven revitalization. Through a partnership with the Ambassador of Denmark to the United States, Christina Markus Lassen, a local community development organization was able to purchase the school and host the renowned Chicago Architecture Biennial, raising awareness of and support for ongoing redevelopment efforts."})
-             .to(".begin2", {opacity: 1})
-         
+            "Overton represents a significant example of community-driven revitalization. Through a partnership with the Ambassador of Denmark to the United States, Christina Markus Lassen, and local community development organizations was awarded the honor to host the renowned Chicago Architecture Biennial, raising awareness of and support for ongoing redevelopment efforts."})
+                                 .to(".begin2", { opacity: 0})
+
+                        .to(biennial, { opacity: 1, scale: .85})
+               .to({}, {delay: 4})
+            .to(biennial, { opacity: 0})
+  
+  .call(() => { document.querySelector(".begin2").innerHTML =
+              
+                        "The transformation of Overton into a thriving community hub exemplifies the essence of Huey P. Newton's theory of revolutionary intercommunalism. By fostering cooperation, shared resources, and community engagement, the story of Overton demonstrates the power of communities to challenge oppressive systems and create a more human society. The once-closed elementary school now stands as a testament to the potential that lies within every community when they unite, collaborate, and work towards a common goal."})
+            .to(".begin2", { opacity: 1})
+
+  
   .to({}, { delay: 10 })
 
-            .to(overton, { opacity: 0})
            .to(".begin2", {opacity: 0})
 
-            .to(biennial, { opacity: 1, scale: .40})
-            .to(biennial, { opacity: 0, delay: 10})
 
             .to(overtonday, { opacity: 1, scale: .85})
             .to(overtonday, { opacity: 0, delay: 4})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
-"At the heart of the transformation of Overton is the Terra Firma Initiative, which exemplifies the principles of revolutionary intercommunalism. This initiative focuses on hiring community members to remediate and plant on vacant lots throughout the South Side, creating opportunities for local residents to take an active role in the revitalization of their neighborhoods."})
+"At the heart of the transformation of Overton is the Terra Firma Initiative, which exemplifies the principles of dialectical materialism. This initiative focuses on hiring community members to remediate and plant on vacant lots throughout the South Side, creating opportunities for local residents to take an active role in the revitalization of their neighborhoods."})
            .to(".begin2", {opacity: 1})
 
            .to({}, { delay: 8 })
