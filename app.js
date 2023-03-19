@@ -289,8 +289,7 @@ timeline.to(".wrapper", { opacity: 0})
 
 //text
        .call(() => { document.querySelector(".cite").innerHTML =
-"Rodriguez, Besenia (2006) 'Long Live Third World Unity! Long Live Internationalism!'"
-})
+"Rodriguez, Besenia. (2006). 'Long Live Third World Unity! Long Live Internationalism! Huey P. Newton’s revolutionary intercommunalism'. Souls, 8(3), 119–141."})
 
        .call(() => { document.querySelector(".begin1").innerHTML =
 "The Bandung Conference gave birth to what we now know as the Non-Aligned Movement or NAM. This movement was a group of countries that refused to align themselves with either the US-led Western bloc or the Soviet-led Eastern bloc. These were countries that sought to maintain their independence and neutrality in the Cold War, refusing to become mere pawns in a game played by the great powers."
@@ -518,7 +517,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to(".begin2", {opacity:1, duration: 1})
            .to({}, { delay: 2 })
            .call(() => { document.querySelector(".cite").innerHTML =
-"Karl Marx, 'Wage labour and capital' "})
+"Marx, Karl. (1935). Wage labour and capital. PRISM: Political & Rights Issues & Social Movements, 163. "})
            .call(() => { document.querySelector(".begin2").innerHTML =
 
 "A small class of capitalists or owners control the means of production, while the majority of people, the working class or proletariat, do not own the means of production and must sell their labor in order to survive."
@@ -566,7 +565,7 @@ timeline.to(".wrapper", { opacity: 0})
             .to({}, {delay: 2 })
 
             .call(() => { document.querySelector(".cite").innerHTML =
-"Vladimir Lenin, 'Imperialism: The Highest Stage of Capitalism'"
+"Lenin, Vladimir. (2010). Imperialism: The Highest Stage of Capitalism. Penguin Classics."
            })
            .call(() => { document.querySelector(".begin2").innerHTML =
 "Imperialism is the highest stage of capitalism, in which monopolies and finance capital dominated the global economy and competed for control over resources and markets."
@@ -629,7 +628,7 @@ timeline.to(".wrapper", { opacity: 0})
 
 
            .call(() => { document.querySelector(".cite").innerHTML =
-"Frantz Fanon, 'The Wretched of the Earth'"})
+"Fanon, Frantz. (1968). The Wretched of the Earth. New York: Grove Press."})
            .call(() => { document.querySelector(".begin2").innerHTML =
 "Fanon saw colonialism as a process that destroyed the dynamism of colonized people and established defense mechanisms. The colonized person is made to admit the inferiority of their culture, nation, and even their own biological structure. This instills a powerful form of racism into the thinking of the victims as well as the oppressors. "
            })
@@ -670,7 +669,7 @@ timeline.to(".wrapper", { opacity: 0})
            })
            .to(".begin2", { opacity: 1 })
            .to({}, { delay: 9 })
-           .call(() => { document.querySelector(".cite").innerHTML ="Excerpt from Huey P. Newton, 'Revolutionary intercommunalism and the right of nations to self-determination'"})
+           .call(() => { document.querySelector(".cite").innerHTML ="Newton, H., Lenin, V. I., & Gdala, A. (Ed.). (2006). Revolutionary Intercommunalism and the Right of Nations to Self-Determination."})
            .call(() => { document.querySelector(".begin2").innerHTML =
            "The Black Panther Party has chosen materialist assumptions on which to ground its ideology. This is a purely arbitrary choice. Idealism might be the real happening; we might not be here at all. We don’t really know whether we are in Connecticut or in San Francisco, whether we are dreaming and in a dream state, or whether we are awake and in a dream state. Perhaps we are just somewhere in a void; we simply can’t be sure. "
            })
@@ -794,7 +793,7 @@ timeline.to(".wrapper", { opacity: 0})
            .to({}, { delay: 15 })
 
            .call(() => {document.querySelector(".cite").innerHTML =
-           "Frantz Fanon, Wretched of the Earth"})
+           "Fanon, Frantz. (1968). The Wretched of the Earth. New York: Grove Press."})
 
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Fanon was a stalwart advocate that the mastery of a language, even the colonizer’s language is a source of immense power. He argues, that effectively appropriating the colonizer’s language begets a radically subversive textuality of anticolonialism. "})
@@ -823,7 +822,7 @@ timeline.to(".wrapper", { opacity: 0})
            .to({}, { delay: 17 })
 
            .call(() => {document.querySelector(".cite").innerHTML =
-           "Newton and Lenin, Revolutionary Intercommunalism and the Right to Self-Determination."  })
+           "Newton, H., Lenin, V. I., & Gdala, A. (Ed.). (2006). Revolutionary Intercommunalism and the Right of Nations to Self-Determination."  })
 
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Consequently, traditional aspects of nationhood, such as economic independence, cultural determination, political institution control, territorial integrity, and safety, have become obsolete for both the US and other nations." })
@@ -841,7 +840,7 @@ timeline.to(".wrapper", { opacity: 0})
            .to({}, { delay: 28 })
 
            .call(() => {document.querySelector(".cite").innerHTML =
-           "John Narayan, 'Huey P. Newton’s Intercommunalism'"  })
+           "Narayan, J. (2019). Huey P. Newton’s Intercommunalism. Theory, Culture & Society, 36(3), 57–85."  })
            .call(() => { document.querySelector(".begin2").innerHTML =
            "The intertwining of global interests with those of the US empire and its 'international bourgeoisie' has led to Third World countries and even former European imperial powers conceding to its dominance. This results in these nations sacrificing their theoretical national sovereignty (Newton, 1971). Newton anticipated Hardt and Negri's concept of a global aristocracy of empire, stating that the new phase of imperialism is characterized by conflicts among the empire's rulers, rather than between rulers and the people."})
            .to(".cite", { opacity: 1 }, "<")
@@ -862,7 +861,7 @@ timeline.to(".wrapper", { opacity: 0})
 
 
            .call(() => {document.querySelector(".cite").innerHTML =
-           "Immanuel Wallerstein, 'The Rise and Future Demise of the World-Capitalist System: Concepts for Comparative Analysis'"})
+           "Wallerstein, Immanuel. (1974). The modern world-system: Capitalist agriculture and the origins of the European world-economy in the sixteenth century. New York: Academic."})
            .call(() => { document.querySelector(".begin2").innerHTML =
            "Immanuel Wallerstein's world-systems theory divides the world into core, semi-peripheral, and peripheral countries that are interconnected through a capitalist world economy. Wallerstein's perspective on the global economic system and the way it maintains a hierarchy of nations also echoes Newton's emphasis on the interconnectedness of the US empire and its international bourgeoisie. According to the world-systems theory, the core countries exploit the peripheral and semi-peripheral nations for resources and cheap labor, perpetuating a cycle of dependency and underdevelopment."})
            .to(".cite", { opacity: 1 }, "<")
